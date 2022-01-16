@@ -1,0 +1,29 @@
+.container {
+  width: 327px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  @media (min-width: $pre-tabletW) {
+    width: 672px;
+    padding: 0 48px;
+  }
+
+  @media (min-width: $tabletW) {
+    width: 928px;
+  }
+
+  @media (min-width: $pre-desktopW) {
+    width: 1120px;
+    padding: 0 80px;
+  }
+
+  @media (min-width: $desktopW) {
+    width: 1244px;
+    padding: 0 98px;
+  }
+
+  @media (min-width: $over-desktopW) {
+    width: 1660px;
+    padding: 0 130px;
+  }
+}
