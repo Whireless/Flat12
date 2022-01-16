@@ -1,0 +1,22 @@
+.titles {
+  background-color: $white;
+  border-radius: 20px;
+  padding: 34px 24px 0 24px;
+  order: 1;
+}
+
+.titles__title {
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.titles__my-points {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 600;
+  color: $green;
+  margin: 0;
+}

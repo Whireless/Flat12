@@ -1,0 +1,73 @@
+.main-nav {
+  position: relative;
+  display: flex;
+  background-color: $white;
+  height: 40px;
+  padding: 12px 24px;
+}
+
+.main-nav__logo {
+  display: block;
+  background-image: url("../img/mobile/logo.svg");
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 40px;
+}
+
+.main-nav__nav-list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: $white;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transform: translateY(-150%);
+  transition: 0.4s;
+  z-index: 3;
+
+  &--open {
+    transform: translateY(64px);
+    transition: 0.4s;
+  }
+}
+
+.main-nav__profile-block {
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+}
+
+.main-nav__notifications {
+  width: 22px;
+  height: 24px;
+  background-image: url("../img/icons/notification.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav__profile-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/mobile/profile-icon.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.main-nav__menu-button {
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/icons/menu-button.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}

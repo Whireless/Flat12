@@ -1,0 +1,111 @@
+.profile__intro-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 26px;
+}
+
+.profile__description-block {
+  margin-right: 42px;
+}
+
+.profile__my-name {
+  font-size: 14px;
+  line-height: 21px;
+  color: $grey3;
+  margin: 0;
+}
+
+.profile__my-status {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  margin: 12px 0;
+}
+
+.profile__my-info {
+  line-height: 15px;
+  margin: 0;
+  color: $grey3;
+}
+
+.profile__friends {
+  margin-top: 27px;
+  margin-bottom: 30px;
+}
+
+.profile__friends-title {
+  font-size: 14px;
+  line-height: 20px;
+  color: $grey3;
+  margin: 0;
+}
+
+.profile__all-friends {
+  display: block;
+  background-image: url("../img/mobile/friend-list.png");
+  background-repeat: no-repeat;
+  width: 141px;
+  height: 48px;
+  margin-top: 8px;
+}
+
+.profile__links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  margin-bottom: 23px;
+}
+
+.profile__links-title {
+  font-size: 14px;
+  line-height: 20px;
+  flex-basis: 100%;
+  color: $grey3;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.profile__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  line-height: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  color: $brown;
+  padding-left: 32px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+
+  &--vkontakte {
+    flex-basis: 45%;
+
+    &::before {
+      background-image: url("../img/icons/vk.svg");
+    }
+  }
+
+  &--facebook {
+    flex-basis: 35%;
+
+    &::before {
+      background-image: url("../img/icons/fb.svg");
+    }
+  }
+
+  &--discord {
+    margin-top: 15px;
+
+    &::before {
+      background-image: url("../img/icons/discord.svg");
+    }
+  }
+}
