@@ -1,3 +1,114 @@
 .main-footer {
   background-color: $brown;
+  padding: 35px 0;
+}
+
+.main-footer__footer-logo {
+  display: block;
+  width: 203px;
+  height: 34px;
+  background-image: url("../img/mobile/footer-logo.svg");
+  background-repeat: no-repeat;
+}
+
+.main-footer__our-service {
+  display: none;
+}
+
+.main-footer__our-info {
+  display: none;
+}
+
+.main-footer__other-info {
+  display: none;
+}
+
+.main-footer__contacts-block {
+  font-family: "Inter", "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+
+  a {
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+.main-footer__number {
+  margin-bottom: 8px;
+}
+
+.main-footer__social-block {
+  display: flex;
+  column-gap: 8px;
+  width: 232px;
+  margin-top: 32px;
+}
+
+.main-footer__social-link {
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  transition: 0.4s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    transition: 0.4s;
+  }
+
+  &--whatsapp {
+    background-image: url("../img/icons/footer-whts.svg");
+  }
+
+  &--vkontakte {
+    background-image: url("../img/icons/footer-vk.svg");
+  }
+
+  &--facebook {
+    background-image: url("../img/icons/footer-fb.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/icons/footer-ytb.svg");
+  }
+
+  &--telegram {
+    background-image: url("../img/icons/footer-tlg.svg");
+  }
+}
+
+.main-footer__copyright-block {
+  font-family: "Inter", "Arial", sans-serif;
+  color: $white2;
+  margin-top: 28px;
+  padding-top: 21px;
+  border-top: 1px solid $grey6;
+}
+
+.main-footer__copyright {
+  margin: 0;
+}
+
+.main-footer__all-right {
+  margin: 10px 0;
+}
+
+.main-footer__confidentiality {
+  text-decoration: none;
+  color: $white2;
+  border-bottom: 1px solid $white2;
+}
+
+.main-footer__made-by {
+  display: block;
+  width: 113px;
+  height: 18px;
+  background-image: url("../img/icons/flat12.svg");
+  background-repeat: no-repeat;
+  margin-top: 35px;
 }
