@@ -5,3 +5,52 @@
 .main-header__page-head {
   display: none;
 }
+
+@media (min-width: $pre-desktopW) {
+  .main-header {
+    position: relative;
+  }
+
+  .main-header__page-head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    column-gap: 45px;
+    background-color: $grey2;
+    padding: 10px 80px 7px 80px;
+    z-index: 15;
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $grey1;
+      transition: 0.4s;
+
+      &:hover,
+      &:focus {
+        color: $brown;
+        transition: 0.4s;
+      }
+    }
+  }
+
+  .main-header__main-list {
+    display: flex;
+    justify-content: space-between;
+    width: 783px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .main-header__social-list {
+    display: flex;
+    justify-content: space-between;
+    width: 274px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}

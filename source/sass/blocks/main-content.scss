@@ -3,3 +3,12 @@
   flex-direction: column;
   background-color: $grey2;
 }
+
+@media (min-width: $pre-desktopW) {
+  .main-content {
+    flex-direction: row;
+    padding-top: 91px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}

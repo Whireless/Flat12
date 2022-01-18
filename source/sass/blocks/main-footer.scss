@@ -259,3 +259,31 @@
   }
 
 }
+
+@media (min-width: $pre-desktopW) {
+  .main-footer {
+    padding: 41px 0 20px 0;
+  }
+
+  .main-footer__main-block {
+    flex-direction: row;
+    column-gap: 80px;
+    width: 669px;
+  }
+
+  .main-footer__links-block {
+    width: 429px;
+  }
+
+  .main-footer__contacts-block {
+    margin-top: 0;
+  }
+
+  .main-footer__number {
+    margin-bottom: 17px;
+  }
+
+  .main-footer__our-contacts {
+    margin-bottom: 24px;
+  }
+}

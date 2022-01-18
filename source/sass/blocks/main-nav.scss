@@ -163,3 +163,40 @@
     height: 28px;
   }
 }
+
+@media (min-width: $pre-desktopW) {
+  .main-nav {
+    top: 35px;
+    padding: 14px 80px;
+  }
+
+  .main-nav__nav-list {
+    line-height: 17px;
+    position: static;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    width: 567px;
+    height: auto;
+    margin-left: 64px;
+    padding-top: 0;
+    transform: translate(0);
+  }
+
+  .main-nav__nav-item {
+    height: auto;
+
+    a {
+      height: 17px;
+    }
+  }
+
+  .main-nav__profile-block {
+    width: 91px;
+  }
+
+  .main-nav__menu-button {
+    display: none;
+  }
+}

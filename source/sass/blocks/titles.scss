@@ -319,3 +319,12 @@
     align-self: center;
   }
 }
+
+@media (min-width: $pre-desktopW) {
+  .titles {
+    width: 720px;
+    height: 375px;
+    margin: 32px 0 0 0;
+    padding: 36px 39px 24px 40px;
+  }
+}

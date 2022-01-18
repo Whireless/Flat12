@@ -84,6 +84,7 @@
     left: 11px;
     background-image: url("../img/icons/pen.svg");
     background-repeat: no-repeat;
+    background-size: contain;
     width: 24px;
     height: 24px;
   }
@@ -277,5 +278,70 @@
 
   .profile__links-title {
     margin-bottom: 8px;
+  }
+}
+
+@media (min-width: $pre-desktopW) {
+  .profile {
+    width: 280px;
+    margin-top: 32px;
+    margin-left: 41px;
+    order: 1;
+
+    .container {
+      width: inherit;
+      padding: 0;
+    }
+  }
+
+  .profile__info-block {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+  }
+
+  .profile__basic-info {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .profile__intro-block {
+    flex-direction: column;
+  }
+
+  .profile__description-block {
+    margin-top: 16px;
+    margin-left: 0;
+  }
+
+  .profile__friends {
+    margin-top: 24px;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .profile__other-info {
+    flex-direction: column;
+    margin-top: 24px;
+  }
+
+  .profile__info-bonus {
+    height: 36px;
+    padding-left: 50px;
+
+    &::before {
+      top: 13px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .profile__links {
+    flex-direction: column;
+    row-gap: 16px;
+    width: 280px;
+    margin-top: 24px;
   }
 }
