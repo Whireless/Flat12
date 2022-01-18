@@ -56,3 +56,9 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $tabletW) {
+  .edit-profile {
+    padding: 38px 199px 34px 33px;
+  }
+}

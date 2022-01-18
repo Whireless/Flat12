@@ -79,9 +79,13 @@
 }
 
 @media (min-width: $pre-tabletW) {
+  .edit-photo {
+    padding: 0 48px;
+  }
+
   .edit-photo__photo-block {
-    margin-left: 48px;
-    margin-right: 48px;
+    margin-left: 0;
+    margin-right: 0;
     padding: 18px 48px;
   }
 
@@ -102,12 +106,20 @@
     font-size: 14px;
     line-height: 20px;
     width: 610px;
-    margin-left: 48px;
-    margin-right: 48px;
 
     &::before {
       top: 10px;
       left: 10px;
     }
+  }
+}
+
+@media (min-width: $tabletW) {
+  .edit-photo__download-zone {
+    width: 738px;
+  }
+
+  .edit-photo__info-bonus {
+    width: 866px;
   }
 }

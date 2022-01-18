@@ -204,3 +204,13 @@
     margin-top: 47px;
   }
 }
+
+@media (min-width: $tabletW) {
+  .form__contact-label {
+    width: 331px;
+  }
+
+  .form__personal-label {
+    width: 331px;
+  }
+}
