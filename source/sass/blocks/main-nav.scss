@@ -157,3 +157,9 @@
     height: 48px;
   }
 }
+
+@media (min-width: $tabletW) {
+  .main-nav {
+    height: 28px;
+  }
+}
