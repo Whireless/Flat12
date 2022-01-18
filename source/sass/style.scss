@@ -3,6 +3,7 @@
 @import "normalize.scss";
 @import "container.scss";
 @import "global.scss";
+@import "animations.scss";
 @import "blocks/main-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/main-content.scss";
@@ -15,3 +16,4 @@
 // Блоки для страницы редактирования
 @import "blocks/edit-profile.scss";
 @import "blocks/edit-photo.scss";
+@import "blocks/form.scss";

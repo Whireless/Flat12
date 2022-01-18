@@ -1,0 +1,45 @@
+.edit-photo {
+  margin-top: 16px;
+  margin-bottom: 34px;
+}
+
+.edit-photo__photo-block {
+  display: flex;
+  background-color: $white;
+  margin-bottom: 16px;
+  padding: 24px 59px 24px 24px ;
+  border-radius: 20px;
+}
+
+.edit-photo__download-zone {
+  width: 168px;
+  margin-left: 32px;
+}
+
+.edit-photo__photo-info {
+  font-size: 14px;
+  line-height: 21px;
+  color: $grey1;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.edit-photo__download {
+  text-transform: uppercase;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $orange;
+  width: 112px;
+  height: 37px;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+    transition: 0.4s;
+  }
+}

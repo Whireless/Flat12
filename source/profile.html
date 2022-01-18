@@ -68,30 +68,31 @@
       </div>
     </section>
     <section class="edit-profile">
-      <a class="edit-profile__go-back" href="index.html"></a>
+      <a class="edit-profile__go-back" href="index.html" aria-label="Назад в личный кабинет"></a>
       <h1 class="edit-profile__title">Редактирование профиля</h1>
       <form class="form" action="#" method="POST">
+        <h2 class="form__title">Основная информация</h2>
         <fieldset class="form__contact-block">
-          <label class="form__nickname">Позывной
-            <input type="text">
+          <label class="form__contact-label">Позывной
+            <input class="form__nickname-input" type="text">
           </label>
-          <label class="form__email">Email
-            <input type="text">
+          <label class="form__contact-label">Email
+            <input class="form__email-input" type="text">
           </label>
           <a class="form__history-nicknames" href="#">История позывных</a>
         </fieldset>
         <fieldset class="form__personal-block">
-          <label class="form__name">Имя
-            <input type="text">
+          <label class="form__personal-label">Имя
+            <input class="form__name-input" type="text">
           </label>
-          <label class="form__surname">Фамилия
-            <input type="text">
+          <label class="form__personal-label">Фамилия
+            <input class="form__surname-input" type="text">
           </label>
-          <label class="form__born">Дата рождения
-            <input type="date">
+          <label class="form__personal-label">Дата рождения
+            <input class="form__born-input" type="date">
           </label>
-          <label class="form__city">Город
-            <select>
+          <label class="form__personal-label">Город
+            <select class="form__city">
               <option value="st.petersburg">Санкт-Петербург</option>
               <option value="moscow">Москва</option>
               <option value="krasnodar">Краснодар</option>
@@ -100,17 +101,19 @@
             </select>
           </label>
         </fieldset>
-        <button type="submit">Сохранить</button>
+        <button class="form__save-button" type="submit">Сохранить</button>
       </form>
     </section>
     <section class="edit-photo">
       <h2 class="visually-hidden">Редактирование фотографии</h2>
       <div class="edit-photo__photo-block">
-        <img class="edit-photo__new-photo" src="" width="" height="" alt="Тут будет твоя новая фотография">
-        <p class="edit-photo__photo-info">Максимальный размер 300х300, вес менее 1 Мб</p>
-        <label class="edit-photo__download">Загрузить
-          <input class="visually-hidden" type="file">
-        </label>
+        <img class="edit-photo__new-photo" src="img/icons/new-photo.svg" width="92" height="92" alt="Тут будет твоя новая фотография">
+        <div class="edit-photo__download-zone">
+          <p class="edit-photo__photo-info">Максимальный размер <br> 300х300, вес менее 1 Мб</p>
+          <label class="edit-photo__download">Загрузить
+            <input class="visually-hidden" type="file">
+          </label>
+        </div>
       </div>
       <a class="info-bonus" href="profile.html">Заполните все поля профиля и получите <span class="info-bonus__bonus-number">+ 30 баллов</span></a>
     </section>
@@ -139,7 +142,7 @@
         <a href="#">Система баллов</a>
       </div>
       <div class="main-footer__contacts-block">
-        <a href="tel:+78003002525">8 (800) 300–25–25</a>
+        <a class="main-footer__number" href="tel:+78003002525">8 (800) 300–25–25</a>
         <a href="mailto:privatka.club@gmail.com">privatka.club@gmail.com</a>
         <div class="main-footer__social-block">
           <a class="main-footer__social-link main-footer__social-link--whatsapp" href="#" aria-label="Мы в Ватсапе"></a>
@@ -153,7 +156,7 @@
         <p>Copyright © 2021</p>
         <p>All Rights Reserved</p>
         <a class="main-footer__confidentiality" href="#">Политика конфенденциальности</a>
-        <a class="main-footer__made-by" href="#" aria-label="Пожалуй лучшая компания по созданию сайтов"></a>
+        <a class="main-footer__made-by" href="#" aria-label="Пожалуй, лучшая компания по созданию сайтов"></a>
       </div>
     </div>
   </footer>

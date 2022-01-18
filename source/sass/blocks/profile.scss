@@ -79,6 +79,13 @@
   font-weight: 600;
   color: $brown;
   padding-left: 32px;
+  transition: 0.4s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    transition: 0.4s;
+  }
 
   &::before {
     content: "";

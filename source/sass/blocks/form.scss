@@ -1,0 +1,142 @@
+.form__title {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.form__contact-block {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__contact-label {
+  font-family: "Inter", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 600;
+  color: $grey1;
+  display: flex;
+  flex-direction: column;
+
+  &:nth-of-type(2) {
+    margin-top: 32px;
+    margin-bottom: 30px;
+  }
+
+  input {
+    font-size: 14px;
+    line-height: 21px;
+    color: $brown;
+    margin-top: 9px;
+    border: none;
+    border-bottom: 1px solid $grey1;
+  }
+}
+
+.form__history-nicknames {
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $green;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $green2;
+  width: 135px;
+  height: 17px;
+  padding: 10px 20px 10px 49px;
+  border-radius: 26px;
+  transition: 0.4s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    transition: 0.4s;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 21px;
+    background-image: url("../img/icons/history-nicknames.svg");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.form__personal-block {
+  margin: 63px 0 0 0;
+  padding: 0;
+  border: none;
+}
+
+.form__personal-label {
+  font-family: "Inter", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 600;
+  color: $grey1;
+  display: flex;
+  flex-direction: column;
+
+  &:not(:first-of-type) {
+    margin-top: 32px;
+  }
+
+  input {
+    font-size: 14px;
+    line-height: 21px;
+    color: $brown;
+    margin-top: 9px;
+    border: none;
+    border-bottom: 1px solid $grey1;
+  }
+}
+
+.form__city {
+  font-size: 14px;
+  line-height: 21px;
+  color: $grey1;
+  margin-top: 9px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $grey1;
+
+  option {
+    color: $brown;
+  }
+}
+
+.form__save-button {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $orange;
+  width: 327px;
+  height: 50px;
+  margin-top: 41px;
+  padding: 0;
+  border: none;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+    transition: 0.4s;
+  }
+}

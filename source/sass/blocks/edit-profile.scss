@@ -1,0 +1,27 @@
+.edit-profile {
+  background-color: $white;
+  margin-top: 117px;
+  padding: 31px 24px 40px 24px;
+  border-radius: 20px;
+}
+
+.edit-profile__go-back {
+  display: block;
+  background-image: url("../img/icons/arrow-back.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  transition: 0.4s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.25);
+    transition: 0.4s;
+  }
+}
+
+.edit-profile__title {
+  line-height: 29px;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
