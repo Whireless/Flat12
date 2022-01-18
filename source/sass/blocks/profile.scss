@@ -65,6 +65,34 @@
   }
 }
 
+.profile__info-bonus {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  position: relative;
+  color: $grey4;
+  display: inline-block;
+  background-color: $white;
+  padding: 11px 11px 11px 51px;
+  border-radius: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 11px;
+    background-image: url("../img/icons/pen.svg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.profile__bonus-number {
+  color: $brown;
+}
+
 .profile__links {
   display: flex;
   flex-wrap: wrap;
@@ -181,6 +209,16 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/tablet/friend-list@2x.png");
       background-repeat: no-repeat;
+    }
+  }
+
+  .profile__info-bonus {
+    font-size: 14px;
+    line-height: 20px;
+
+    &::before {
+      top: 10px;
+      left: 10px;
     }
   }
 

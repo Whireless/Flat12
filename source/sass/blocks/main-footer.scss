@@ -9,6 +9,13 @@
   height: 34px;
   background-image: url("../img/footer-logo.svg");
   background-repeat: no-repeat;
+  transition: 0.4s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    transition: 0.4s;
+  }
 }
 
 .main-footer__our-service {
@@ -40,6 +47,16 @@
 .main-footer__our-contacts {
   display: flex;
   flex-direction: column;
+
+  a {
+    transition: 0.4s;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+      transform: 0.4s;
+    }
+  }
 }
 
 .main-footer__number {
@@ -108,6 +125,13 @@
   text-decoration: none;
   color: $white2;
   border-bottom: 1px solid $white2;
+  transition: 0.4s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    transition: 0.4s;
+  }
 }
 
 .main-footer__made-by {
@@ -117,6 +141,13 @@
   background-image: url("../img/icons/flat12.svg");
   background-repeat: no-repeat;
   margin-top: 35px;
+  transition: 0.4s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    transition: 0.4s;
+  }
 }
 
 @media (min-width: $pre-tabletW) {

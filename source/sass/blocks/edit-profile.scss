@@ -5,9 +5,14 @@
   border-radius: 20px;
 }
 
+.edit-profile__intro-block {
+  margin-bottom: 40px;
+}
+
 .edit-profile__go-back {
   display: block;
   background-image: url("../img/icons/arrow-back.svg");
+  background-size: contain;
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;
@@ -23,5 +28,31 @@
 .edit-profile__title {
   line-height: 29px;
   margin-top: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 0;
+}
+
+@media (min-width: $pre-tabletW) {
+  .edit-profile {
+    margin-left: 48px;
+    margin-right: 48px;
+    padding: 38px 48px 25px 48px;
+  }
+
+  .edit-profile__intro-block {
+    display: flex;
+    margin-bottom: 38px;
+  }
+
+  .edit-profile__go-back {
+    width: 24px;
+    height: 24px;
+  }
+
+  .edit-profile__title {
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-left: 16px;
+    margin-bottom: 0;
+  }
 }
