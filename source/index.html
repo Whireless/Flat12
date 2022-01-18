@@ -70,9 +70,11 @@
     <section class="titles">
       <div class="titles__head-block">
         <div class="titles__titles-info">
-          <h2 class="titles__title">Ваш титул <span class="titles__dynamic-titles">"Рядовой"</span></h2>
-          <p class="titles__my-points">450 баллов</p>
-          <a class="titles__points-history" href="#">История начисления баллов</a>
+          <div class="titles__main-info">
+            <h2 class="titles__title">Ваш титул <span class="titles__dynamic-titles">«Рядовой»</span></h2>
+            <p class="titles__my-points">450 баллов</p>
+            <a class="titles__points-history" href="#">История начисления баллов</a>
+          </div>
           <p class="titles__my-sale">15% моя скидка</p>
           <div class="titles__sale-info">
             <p class="titles__sale-sum">Персональная и командная скидки суммируются</p>
@@ -139,17 +141,23 @@
       <div class="container">
         <h2 class="visually-hidden">Информация о профиле</h2>
         <div class="profile__info-block">
-          <div class="profile__intro-block">
-            <img class="profile__my-photo" src="img/mobile/profile-photo.png" width="109" height="109" alt="Твоя фотка">
-            <div class="profile__description-block">
-              <p class="profile__my-name">Александр Смирнов</p>
-              <p class="profile__my-status">Белая стрела</p>
-              <p class="profile__my-info">28 лет, Санкт-Петербург <br> в страйкболе с 2019 г</p>
+          <div class="profile__basic-info">
+            <div class="profile__intro-block">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/tablet/profile-photo.png 1x, img/tablet/profile-photo@2x.png 2x">
+                <source media="(min-width: 1280px)" srcset="img/desktop/profile-photo.png 1x, img/desktop/profile-photo@2x.png 2x">
+                <img class="profile__my-photo" src="img/mobile/profile-photo.png" srcset="img/mobile/profile-photo@2x.png 2x" width="109" height="109" alt="Твоя фотка">
+              </picture>
+              <div class="profile__description-block">
+                <p class="profile__my-name">Александр Смирнов</p>
+                <p class="profile__my-status">Белая стрела</p>
+                <p class="profile__my-info">28 лет, Санкт-Петербург <br> в страйкболе с 2019 г</p>
+              </div>
             </div>
-          </div>
-          <div class="profile__friends">
-            <h5 class="profile__friends-title">Друзья</h5>
-            <a class="profile__all-friends" href="#" aria-label="Перейти к списку друзей"></a>
+            <div class="profile__friends">
+              <h5 class="profile__friends-title">Друзья</h5>
+              <a class="profile__all-friends" href="#" aria-label="Перейти к списку друзей"></a>
+            </div>
           </div>
           <a class="info-bonus" href="profile.html" aria-label="Перейти к заполнению данных">Заполните все поля профиля и получите <span class="info-bonus__bonus-number">+ 30 баллов</span></a>
           <div class="profile__links">
@@ -164,30 +172,34 @@
   </main>
   <footer class="main-footer">
     <div class="container">
-      <a class="main-footer__footer-logo" href="#" aria-label="Не менее шикарный логотип чем в шапке"></a>
-      <div class="main-footer__our-service">
-        <a href="#">Сервисы</a>
-        <a href="#">Мероприятия</a>
-        <a href="#">База знаний</a>
-        <a href="#">Правила</a>
-        <a href="#">Оплата</a>
-      </div>
-      <div class="main-footer__our-info">
-        <a href="#">FAQ</a>
-        <a href="#">Новости</a>
-        <a href="#">Блог</a>
-        <a href="#">О клубе</a>
-        <a href="#">Состав клуба</a>
-      </div>
-      <div class="main-footer__other-info">
-        <a href="#">Отзывы</a>
-        <a href="#">Контакты</a>
-        <a href="#">Как попасть в клуб</a>
-        <a href="#">Система баллов</a>
+      <div class="main-footer__main-block">
+        <a class="main-footer__footer-logo" href="#" aria-label="Не менее шикарный логотип чем в шапке"></a>
+        <div class="main-footer__our-service">
+          <a class="main-footer__footer-link" href="#">Сервисы</a>
+          <a class="main-footer__footer-link" href="#">Мероприятия</a>
+          <a class="main-footer__footer-link" href="#">База знаний</a>
+          <a class="main-footer__footer-link" href="#">Правила</a>
+          <a class="main-footer__footer-link" href="#">Оплата</a>
+        </div>
+        <div class="main-footer__our-info">
+          <a class="main-footer__footer-link" href="#">FAQ</a>
+          <a class="main-footer__footer-link" href="#">Новости</a>
+          <a class="main-footer__footer-link" href="#">Блог</a>
+          <a class="main-footer__footer-link" href="#">О клубе</a>
+          <a class="main-footer__footer-link" href="#">Состав клуба</a>
+        </div>
+        <div class="main-footer__other-info">
+          <a class="main-footer__footer-link" href="#">Отзывы</a>
+          <a class="main-footer__footer-link" href="#">Контакты</a>
+          <a class="main-footer__footer-link" href="#">Как попасть в клуб</a>
+          <a class="main-footer__footer-link" href="#">Система баллов</a>
+        </div>
       </div>
       <div class="main-footer__contacts-block">
-        <a class="main-footer__number" href="tel:+78003002525">8 (800) 300–25–25</a>
-        <a href="mailto:privatka.club@gmail.com">privatka.club@gmail.com</a>
+        <div class="main-footer__our-contacts">
+          <a class="main-footer__number" href="tel:+78003002525">8 (800) 300–25–25</a>
+          <a href="mailto:privatka.club@gmail.com">privatka.club@gmail.com</a>
+        </div>
         <div class="main-footer__social-block">
           <a class="main-footer__social-link main-footer__social-link--whatsapp" href="#" aria-label="Мы в Ватсапе"></a>
           <a class="main-footer__social-link main-footer__social-link--vkontakte" href="#" aria-label="Мы Вконтакте"></a>
@@ -197,9 +209,11 @@
         </div>
       </div>
       <div class="main-footer__copyright-block">
-        <p class="main-footer__copyright">© Приватка Клуб, 2021</p>
-        <p class="main-footer__all-right">Все права защищены</p>
-        <a class="main-footer__confidentiality" href="#">Политика конфенденциальности</a>
+        <div class="main-footer__copyright-info">
+          <p class="main-footer__copyright">© Приватка Клуб, 2021</p>
+          <p class="main-footer__all-right">Все права защищены</p>
+          <a class="main-footer__confidentiality" href="#">Политика конфенденциальности</a>
+        </div>
         <a class="main-footer__made-by" href="#" aria-label="Пожалуй, лучшая компания по созданию сайтов"></a>
       </div>
     </div>

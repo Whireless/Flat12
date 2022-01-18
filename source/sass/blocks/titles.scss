@@ -57,7 +57,7 @@
     transition: 0.4s;
 
     & + .titles__sale-info {
-      opacity: 0.9;
+      display: block;
     }
   }
 
@@ -78,6 +78,7 @@
   color: $white;
   width: 187px;
   height: 96px;
+  display: none;
   position: absolute;
   top: -16px;
   left: 16px;
@@ -85,7 +86,6 @@
   padding: 14px 18px 16px 18px;
   border-radius: 10px;
   z-index: 10;
-  opacity: 0;
   transition: 0.4s;
 
   span {
@@ -129,11 +129,49 @@
 }
 
 .titles__titles-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 77px;
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/icons/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $grey6;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 87px;
+    right: -40px;
+    background-color: $grey6;
+    width: 70px;
+    height: 2px;
+  }
+
+  &--wood {
+    &::before {
+      background-color: $brown;
+    }
+
+    &::after {
+      background-color: $brown;
+    }
+  }
+
   &--iron {
+    &::before {
+      background-color: $brown;
+    }
+
     .titles__titles-image {
       margin-top: -12px;
       z-index: 5;
@@ -141,6 +179,12 @@
 
     .titles__titles-name {
       margin-top: 49px;
+    }
+  }
+
+  &:last-of-type {
+    &::after {
+      display: none;
     }
   }
 }
@@ -203,5 +247,52 @@
   &:hover {
     opacity: 0.6;
     transition: 0.4s;
+  }
+}
+
+
+@media (min-width: $pre-tabletW) {
+  .titles {
+    padding: 36px 24px 32px 24px;
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+
+  .titles__main-info {
+    display: flex;
+    margin-bottom: 16px;
+  }
+
+  .titles__title {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+
+  .titles__my-points {
+    align-self: center;
+    margin-left: 15px;
+  }
+
+  .titles__points-history {
+    display: inline-block;
+    align-self: center;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .titles__sale-info {
+    top: -95px;
+    left: 25px;
+  }
+
+  .titles__level-bonus {
+    width: 390px;
+    padding: 13px 21px 13px 48px;
+
+    &::before {
+      top: 7px;
+      left: 12px;
+    }
   }
 }

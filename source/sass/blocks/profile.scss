@@ -2,11 +2,16 @@
   margin-top: 64px;
 }
 
+.profile__basic-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 26px;
+}
+
 .profile__intro-block {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 26px;
 }
 
 .profile__description-block {
@@ -24,7 +29,7 @@
   font-size: 20px;
   line-height: 28px;
   font-weight: 600;
-  margin: 12px 0;
+  margin: 5px 0 10px 0;
 }
 
 .profile__my-info {
@@ -48,10 +53,16 @@
 .profile__all-friends {
   display: block;
   background-image: url("../img/mobile/friend-list.png");
+  background-size: contain;
   background-repeat: no-repeat;
   width: 141px;
   height: 48px;
   margin-top: 8px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile/friend-list@2x.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .profile__links {
@@ -67,7 +78,7 @@
   flex-basis: 100%;
   color: $grey3;
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 11px;
 }
 
 .profile__link {
@@ -117,6 +128,80 @@
 
     &::before {
       background-image: url("../img/icons/discord.svg");
+    }
+  }
+}
+
+@media (min-width: $pre-tabletW) {
+  .profile {
+    margin-top: 80px;
+  }
+
+  .profile__basic-info {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 36px;
+    margin-bottom: 24px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid $grey6;
+  }
+
+  .profile__intro-block {
+    width: 305px;
+  }
+
+  .profile__my-photo {
+    width: 114px;
+    height: 114px;
+  }
+
+  .profile__description-block {
+    margin-right: 0;
+    margin-left: 32px;
+  }
+
+  .profile__my-status {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .profile__friends {
+    align-self: flex-end;
+    width: 193px;
+    height: 68px;
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+
+  .profile__all-friends {
+    background-image: url("../img/tablet/friend-list.png");
+    height: 40px;
+    width: inherit;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet/friend-list@2x.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .profile__links {
+    width: 457px;
+    justify-content: space-between;
+    margin-top: 28px;
+    margin-bottom: 91px;
+  }
+
+  .profile__link {
+    &--vkontakte {
+      flex-basis: auto;
+    }
+
+    &--facebook {
+      flex-basis: auto;
+    }
+
+    &--discord {
+      margin-top: 0;
     }
   }
 }

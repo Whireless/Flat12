@@ -11,7 +11,7 @@
 
 .main-nav__logo {
   display: block;
-  background-image: url("../img/mobile/logo.svg");
+  background-image: url("../img/logo-mini.svg");
   background-repeat: no-repeat;
   width: 43px;
   height: 40px;
@@ -94,7 +94,13 @@
   height: 40px;
   background-image: url("../img/mobile/profile-icon.png");
   background-repeat: no-repeat;
+  background-size: contain;
   cursor: pointer;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile/profile-icon@2x.png");
+    background-size: contain;
+  }
 }
 
 .main-nav__menu-button {
@@ -102,6 +108,7 @@
   height: 40px;
   background-image: url("../img/icons/menu-button.svg");
   background-repeat: no-repeat;
+  background-size: contain;
   background-color: transparent;
   padding: 0;
   border: none;
@@ -111,5 +118,38 @@
   &:hover {
     transform: rotate(360deg);
     transition: 1s;
+  }
+}
+
+@media (min-width: $pre-tabletW) {
+  .main-nav {
+    height: 32px;
+    padding: 24px 48px;
+  }
+
+  .main-nav__logo {
+    background-image: url("../img/logo-full.svg");
+    width: 200px;
+    height: 33px;
+  }
+
+  .main-nav__profile-block {
+    width: 159px;
+  }
+
+  .main-nav__profile-link {
+    background-image: url("../img/tablet/profile-icon.png");
+    width: 48px;
+    height: 48px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet/profile-icon@2x.png");
+      background-size: contain;
+    }
+  }
+
+  .main-nav__menu-button {
+    width: 48px;
+    height: 48px;
   }
 }

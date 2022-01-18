@@ -25,3 +25,12 @@
 .info-bonus__bonus-number {
   color: $brown;
 }
+
+@media (min-width: $pre-tabletW) {
+  .info-bonus {
+    &::before {
+      top: 10px;
+      left: 10px;
+    }
+  }
+}
